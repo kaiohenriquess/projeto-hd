@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 body {
@@ -32,13 +32,41 @@ ul, ol {
 
 /* Seção Hero  */
 .hero {
-     /* ocupa toda a largura disponível */
     width: 100%;
-     /* ocupa toda a altura visível da tela */
     height: 100dvh;
     background-image: url(../images/motos/banner.jpg);
     background-repeat: no-repeat;
-    /* amplia a imagem para cobrir essa área */
     background-size: cover;
     background-position: 50%;
+}
+
+.header-hero {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: var(--spacing-lg);
+
+    h1 {
+        font-size: 38px;
+        color: var(--color-light);
+
+        span {
+            color: var(--color-orange);
+        }
+    }
+}
+
+.header-menu {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.header-menu a {
+    font-weight: 700;
+    transition: color .7s;
+
+    &:hover {
+        color: var(--color-orange);
+    }
 }
